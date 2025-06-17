@@ -1,0 +1,32 @@
+---
+title: "TEST NBA"
+author: "Anthony Harris"
+date: "2025-06-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "C:/Users/antho/Downloads/Data analysis/NBA data")
+```
+
+```{r}
+library(tidyverse)
+```
+
+# Load in data using readRDS
+```{r}
+nba_data <- readRDS("player_box_2012.rds")
+str(nba_data)
+```
+
+```{r}
+write.csv(nba_data, "nba_data.csv", row.names = FALSE)
+```
+
+```{r}
+nba_data
+```
+
+
+
