@@ -19,7 +19,7 @@ df = pd.read_csv("C:/Users/antho/Downloads/Data_analysis/NBA_data/data/nba_data.
 local_engine = create_engine(f'postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}')
 
 # neon connection string
-neon_conn_str = "postgresql://nba_db_owner:npg_oLsakS7z6GIX@ep-lucky-lab-a8df1ixh-pooler.eastus2.azure.neon.tech/nba_db?sslmode=require"
+neon_conn_str = ""
 neon_engine = create_engine(neon_conn_str)
 
 # Upload to database
